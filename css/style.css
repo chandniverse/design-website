@@ -18,16 +18,16 @@
     --color-text-tag: rgb(54, 110, 145);
     --color-background: #ffffff;
     --color-card-background: #ffffff;
-    
+
     /* Accent Colors */
     --accent-1: rgb(247, 69, 164);
     --accent-2: rgb(255, 145, 31);
     --accent-3: rgb(102, 205, 170);
-    
+
     /* Typography */
     --font-serif: 'EB Garamond', serif;
     --font-sans: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    
+
     /* Font Sizes */
     --fs-hero-name: 64px;
     --fs-hero-title: 24px;
@@ -38,7 +38,7 @@
     --fs-footer-title: 48px;
     --fs-footer-text: 18px;
     --fs-nav: 18px;
-    
+
     /* Spacing */
     --spacing-xs: 8px;
     --spacing-sm: 16px;
@@ -47,16 +47,16 @@
     --spacing-xl: 48px;
     --spacing-xxl: 64px;
     --spacing-xxxl: 96px;
-    
+
     /* Layout */
-    --container-max-width: 800px;
+    --container-max-width: 600px;
     --container-padding: 32px;
-    
+
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-medium: 0.3s ease;
     --transition-slow: 0.5s ease;
-    
+
     /* Shadows */
     --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
     --shadow-card-hover: 0 12px 24px rgba(0, 0, 0, 0.12);
@@ -379,8 +379,9 @@ a {
 
 .footer-links {
     display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
+    align-items: left;
+    justify-content: left;
 }
 
 .footer-link {
@@ -419,25 +420,25 @@ a {
         --fs-footer-title: 36px;
         --fs-footer-text: 16px;
         --fs-nav: 16px;
-        
+
         --container-padding: 24px;
         --spacing-xxxl: 64px;
         --spacing-xxl: 48px;
     }
-    
+
     /* Hide desktop nav, show mobile nav */
     .header {
         display: none;
     }
-    
+
     .mobile-nav {
         display: flex;
     }
-    
+
     .hero {
         padding: var(--spacing-xxl) 0;
     }
-    
+
     .footer-bottom {
         flex-direction: column;
         gap: var(--spacing-sm);
@@ -456,17 +457,17 @@ a {
         --fs-footer-title: 28px;
         --fs-footer-text: 14px;
         --fs-nav: 14px;
-        
+
         --container-padding: 16px;
         --spacing-xxxl: 48px;
         --spacing-xxl: 32px;
         --spacing-xl: 32px;
     }
-    
+
     .project-content {
         padding: var(--spacing-md);
     }
-    
+
     .project-images {
         aspect-ratio: 16 / 10;
     }
@@ -475,7 +476,7 @@ a {
 /* Large screens */
 @media (min-width: 1200px) {
     :root {
-        --container-max-width: 900px;
+        --container-max-width: 600px;
     }
 }
 
@@ -492,7 +493,7 @@ a {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
-    
+
     .project-card {
         opacity: 1;
         transform: none;
@@ -525,12 +526,12 @@ button:focus-visible {
     .footer-links {
         display: none;
     }
-    
+
     .project-link {
         box-shadow: none;
         border: 1px solid #ddd;
     }
-    
+
     a {
         text-decoration: underline;
     }
